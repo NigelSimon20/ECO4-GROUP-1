@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    overflow: hidden;
+}
+
+#about{
+    display: flex;
+    gap: 80px;    
+}
+
+#about .about-imgs{
+    padding: 80px;
+}
+
+#about .image2{
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+
+}
+
+#about .about-info{
+    padding-top: 83px;
+}
+
+
+#about .about-info h2{
+font-family: 'Extra-bold';
+font-size: 42px;
+width: 700px;
+color: #17380B;
+padding-bottom: 80px;
+}
+
+#about .about-info .about-content-text{
+    width: 550px;
+    font-family: 'Regular';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+#about .about-info button{
+    border: none;
+    background-color: #3EBD6B;
+    color:#ffffff;
+   height: 60px;
+   width: 250px;
+    font-family: 'bold';
+    font-size: 23px;
+    border-radius: 5px;
+}
