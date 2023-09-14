@@ -48,7 +48,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.footer{
+	background-image: url(./img/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.link-container{
+		
+		
+		ul{
+			li{
+				h5{color: white; font-family : "Regular";}
+				a{color: white; text-decoration: none; font-family : "inter"; }
+			}
+		}
+		
 
+
+	}
+	.line-container{display: flex; align-items: center; justify-content: center;}
+	.line{
+			background-color: white; height: 2px; width: 90vw; align-self: center;
+		}
+		.bottom-container{
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{width: 100%; text-align: center;}
+
+		}
+}
 
 
 
@@ -77,6 +106,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+	.footer{.line{width: 98vw;}  ul{ width: 100%; line-height: 2em;}}
 
 }
 
