@@ -12,6 +12,10 @@
     font-family: Regular;
     src: url(Inter-Regular.ttf);
 }
+@font-face {
+    font-family: inter;
+    src: url(./Inter-Light.ttf);
+}
 
 
 @font-face {
