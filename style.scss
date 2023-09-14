@@ -80,6 +80,49 @@ table {
 }
 
 
+#about{
+	font-family: 'Montserrat-regular';
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px;
+	margin-top: 80px;
+
+	img{
+		width: 100%;
+	}
+
+	
+
+	.image2{
+		margin-top: 15px;
+		gap: 15px;
+		display: flex;
+	}
+
+	.about-info{
+		h2{
+			color: #17380B;
+			font-family: 'Montserrat-bold';
+		}
+
+		
+
+		.btn{
+			button{
+			width: 288px;
+			height: 70px;
+			border: none;
+			border-radius: 8px;
+			background-color: #3EBD6B;
+			color: #ffff;
+			font-family: 'Montserrat-bold';
+			}
+
+		}
+		
+	}
+}
+
 
 
 /*
