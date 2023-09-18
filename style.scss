@@ -64,15 +64,16 @@ table {
 
 #steps--info--text {
 	color: var(--dark-green);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .heading {
 	font-size: 2.3rem;
+	text-align: center;
 }
 
 .check-box {
-	background-color: rgb(0, 218, 49);
+	background-color: rgb(0, 222, 112);
 	border-radius: 4%;
 }
 
@@ -90,15 +91,17 @@ table {
 	text-decoration: none;
 	color: white;
 	padding-bottom: 1rem;
+	visibility: visible;
 	
 }
 .left-subsection {
 	h3 {
-		font-size: 1.2rem;
+		font-size: 0.5rem;
 		padding-top: 1rem;
 		text-align: center;
 	}
 }
+
 
 .border--blue {
 	border: 5px solid blue;
