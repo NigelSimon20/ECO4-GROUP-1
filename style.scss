@@ -1,5 +1,3 @@
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,6 +51,95 @@ $bold :"bold";
 $regular :"Regular";
 $extra :"Extra-bold";
 
+.banner{
+	background-image: url(img/banner.png); height: 100vh; background-size: cover; background-repeat: no-repeat;
+	.overlay{
+		background-color: rgba(0, 0, 0, 0.538); color: white; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+		h1{font-family: $extra; font-size: 40px; line-height: 50px; margin-top: 55px;}
+		p{font-family: $regular; font-size: 20px; margin-top: 25px;}
+		.check{background-color: #3EBD6B; color: white; font-family: $bold; text-decoration: none; display: block; margin-top: 25px; padding: 15px; border-radius: 7px;}
+		.icons{
+			display: flex; margin-top: 50px;
+			.pic{height: 35px; width: 35px; border: 1.5px solid rgb(190, 186, 186); border-radius: 100%;display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-left: 15px;
+				img{width: 20px; object-fit: cover;}
+			}
+		}
+    }
+}
+
+#about{
+    font-family: 'Montserrat-regular';
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 80px;
+
+    img{
+        width: 100%;
+    }
+
+    
+    .image2{
+        margin-top: 15px;
+        gap: 15px;
+        display: flex;
+    }
+
+    .about-info{
+        h2{
+            color: #17380B;
+            font-family: 'Montserrat-bold';
+            padding-bottom: 30px;
+            
+        }
+
+        .about-content-text{
+            line-height: 27px;
+        }
+
+        
+            button{
+            width: 260px;
+            height: 70px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3EBD6B;
+            color: #ffff;
+            font-family: 'Montserrat-bold';
+            }
+        
+    }
+}
+.footer{
+	background-image: url(./img/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.link-container{
+		
+		
+		ul{
+			li{
+				h5{color: white; font-family : "Regular";}
+				a{color: white; text-decoration: none; font-family : "inter"; }
+			}
+		}
+		
+
+
+	}
+	.line-container{display: flex; align-items: center; justify-content: center;}
+	.line{
+			background-color: white; height: 2px; width: 90vw; align-self: center;
+		}
+		.bottom-container{
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{width: 100%; text-align: center;}
+
+		}
+}
 
 
 .forms{
@@ -71,8 +158,123 @@ $extra :"Extra-bold";
 		}
 	}
 }
+.footer{
+	background-image: url(./img/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.link-container{
+		
+		
+		ul{
+			li{
+				h5{color: white; font-family : "Regular";}
+				a{color: white; text-decoration: none; font-family : "inter"; }
+			}
+		}
+		
 
 
+	}
+	.line-container{display: flex; align-items: center; justify-content: center;}
+	.line{
+			background-color: white; height: 2px; width: 90vw; align-self: center;
+		}
+		.bottom-container{
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{width: 100%; text-align: center;}
+
+		}
+}
+
+
+#about{
+	font-family: 'Montserrat-regular';
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px;
+	margin-top: 80px;
+
+	img{
+		width: 100%;
+	}
+
+	
+
+	.image2{
+		margin-top: 15px;
+		gap: 15px;
+		display: flex;
+	}
+
+	.about-info{
+		h2{
+			color: #17380B;
+			font-family: 'Montserrat-bold';
+		}
+
+		
+
+		.btn{
+			button{
+			width: 288px;
+			height: 70px;
+			border: none;
+			border-radius: 8px;
+			background-color: #3EBD6B;
+			color: #ffff;
+			font-family: 'Montserrat-bold';
+			}
+
+		}
+		
+	}
+}
+#about{
+    font-family: 'Montserrat-regular';
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 80px;
+
+    img{
+        width: 100%;
+    }
+
+    
+    .image2{
+        margin-top: 15px;
+        gap: 15px;
+        display: flex;
+    }
+
+    .about-info{
+        h2{
+            color: #17380B;
+            font-family: 'Montserrat-bold';
+            padding-bottom: 30px;
+            
+        }
+
+        .about-content-text{
+            line-height: 27px;
+        }
+
+        
+            button{
+            width: 260px;
+            height: 70px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3EBD6B;
+            color: #ffff;
+            font-family: 'Montserrat-bold';
+            }
+        
+    }
+}
 
 
 
@@ -105,14 +307,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 		.find{
 			background-color: white; text-align: center; width: 80%; margin-left: 10%; position: absolute; margin-top: 80px;
 			h4{color: rgb(4, 59, 4);margin-top: 40px;font-family: $bold;}
+			// input{width: 73.5%;height: 55px;margin-left: 80px;border-color: rgb(199, 253, 200);outline: 0;font-size: 15px;margin-top: 0px;
+					
+			// }
 			.form{padding: 0.01px;
-				.small{height: 65px;margin-left: 0px;width: 96%;
-					input{margin-left: 0px;}
+				.smalls{height: 65px;margin-left: 0px;width: 96%;
+					.form-control{margin-left: 0px !important;}
 				}
 				.tabs{width: 50%;}
-				input{width: 73.5%;height: 55px;margin-left: 80px;border-color: rgb(199, 253, 200);outline: 0;font-size: 15px;margin-top: 0px;
-					
-				}
+
 				.buttons{margin-top: -43px; margin-left: 350px;
 					button{background-color: rgb(0, 197, 102);border: 0px;width: 30px;font-size: 12px;margin: 3px; align-items: center;padding-left: 7px;font-size: 10px;}
 				}
@@ -122,7 +325,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 			}
 		}
 	}
+	.footer{.line{width: 98vw;}  ul{ width: 100%; line-height: 2em;}}
 }
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -132,12 +338,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 			background-color: white; text-align: center; width: 40%; margin-left: 30%; position: absolute; margin-top: 80px;
 			h4{color: rgb(4, 59, 4);margin-top: 40px;font-family: $bold;}
 			.form{padding: 0.01px;
-				.small{height: 60px;margin-left: 0px;width: 96%;
-					input{margin-top: 0px;}
-				}
+				// .smalls{height: 60px;left: 0px;width: 96%; display:  
+				// 	input{margin-top: 0px; margin-left: -10%;}
+				// }
 				.tabs{width: 50%;}
-				input{width: 70%;height: 55px;margin-left: 80px;border-color: rgb(199, 253, 200);outline: 0;font-size: 12px;margin-top: 0px;
+				// input{width: 50%;height: 55px;margin-left: 0px;border-color: rgb(199, 253, 200);outline: 0;font-size: 12px;margin-top: 0px;
 					
+				// }
+				.smalls{height: 65px;margin-left: 0px;width: 96%;
+					input{margin-left: 0px !important;}
 				}
 				.buttons{margin-top: -43px; margin-left: 280px;
 					button{background-color: rgb(0, 197, 102);border: 0px;width: 30px;font-size: 12px;margin: 3px; align-items: center;padding-left: 7px;font-size: 10px;}
@@ -148,6 +357,26 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 			}
 		}
 	}
+	#about{
+        flex-wrap: nowrap;
+        gap: 30px;
+
+        .about-info {
+            h2{
+                font-size: 25px;
+            }
+
+            .about-content-text{
+                margin-top: -5px;
+            }
+
+            button{
+                font-size: 20px;
+                margin-top: -12px
+            }
+        }
+    }
+	
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -164,5 +393,110 @@ Custom media queries
 
 /* Set width to make card deck cards 100% width */
 @media (max-width: 950px) { 
+
+}
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.footer{.line{width: 98vw;}  ul{ width: 100%; line-height: 2em;}}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	#about{
+        flex-wrap: nowrap;
+        gap: 30px;
+
+        .about-info {
+            h2{
+                font-size: 25px;
+            }
+
+            .about-content-text{
+                margin-top: -5px;
+            }
+
+            button{
+                font-size: 20px;
+                margin-top: -12px
+            }
+        }
+    }
+	
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	#about{
+        gap: 120px;
+        .flex-container{ 
+			height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            
+        }
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .about-info {
+            h2{
+                font-size: 36px;
+            }
+		}
+                .about-content-text{
+                font-size: 19px;
+                 width: 560px;
+                 margin-top: -9px;
+            }
+
+            button{
+                margin-top: -7px
+            }
+        }
+    }
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+	
 
 }

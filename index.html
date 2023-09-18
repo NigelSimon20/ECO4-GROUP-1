@@ -1,17 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style.scss">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./navigation.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <title>Eco4 Home</title>
+  </head>
+  <body>
+
+     <!-- Start Header -->
+
+     <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="" class="img-fluid">
+        </a>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar" id="top"></div>
+            <div class="bar" id="middle"></div>
+            <div class="bar" id="bottom"></div>
+        </div>
+
+        <!-- Main Menu -->
+        <ul class="menu">
+            <li class="menu-item"><a href="#home">HOME</a></li>
+            <li class="menu-item"><a href="#about">ABOUT</a></li>
+            <li class="menu-item"><a href="#services">SERVICES</a></li>
+            <li class="menu-item"><a href="#blog">BLOG</a></li>
+            <li class="menu-item"><a href="#contact">CONTACT</a></li>
+            <div class="search small">
+              <form action="">
+                <input type="text" placeholder="Search">
+              </form>
+          </div>
+        </ul>
+        <div class="search big">
+            <form action="">
+              <input type="text" placeholder="Search">
+            </form>
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Banner -->
+
+    <section class="banner" id="home">
+        <div class="overlay">
+            <h1>UPGRADE YOUR HOME FOR FREE <br> WITH ECO4 SCHEME</h1>
+            <p>FOR HOME OWNERS AND TENANTS</p>
+            <a href="#" class="check">Check Your Eligibility</a>
+            <div class="icons">
+              <div class="pic">
+                <a href="#"><img src="img/fb.png" alt="icon"></a>
+              </div>
+              <div class="pic">
+                <a href="#"><img src="img/email.png" alt="icon"></a>
+              </div>
+              <div class="pic">
+                <a href="#"><img src="img/location.png" alt="icon"></a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Banner -->
+    
+    <main>
+        <section id="about" class="container">
+            <div class="about-imgs col-md-12 col-lg-6">
+           <div class="pics-container">
+            <div class="image1">
+                <img src="img/Rectangle 2.png" alt="">
+            </div>
+            <div class="image2 ">
+                <div class="one">
+                    <img src="img/Rectangle 3.png" alt="">
+                </div>
+                <div class="two">
+                    <img src="img/Rectangle 4.png" alt="">
+                </div>
+            </div>
+           </div>
+
+            </div>
+
+            <div class="about-info col-md-12 col-lg-6">
+            <div class="flex-container">
+                <div class="text-container">
+                    <h2>Ready for Change? Start Your Eco4 Home Upgrade Today</h2>
+                  
+                  <div class="about-content-text">
+                   <p>Welcome to Eco4, this is where sustainable life begins. The Eco4 scheme supports energy efficiency measures by primarily targeting low income households experiencing fuel poverty. We are your partner in changing homes into cutting-edge, economical, and environmentally sustainable living spaces.
+                      </p>
+                      
+                      <p>   We cover actions like installing energy-saving systems, upgrading heating systems, and adding insulation.We are not just a business; we are a movement for a greener future.</p>   
+                  </div>
+                  
+                      
+                  
+                  
+              </div>
+              <button>READ MORE</button> 
+            </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+<br>
+<br>
+<br>
+
+
+    <section id="steps" class="">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 right-subsection">
+            <h2 class="dark--green fw-bold heading">
+              STEPS TO GETTING ENEGRY <br />
+              EFFICIENT WITH ECO4
+            </h2>
+
+            <p class="py-3 w-75" id="steps--info--text">
+              To become energy efficient, with ECO4, first ascertain your
+              eligibility, next, arrange to take a survey, and finally schedule
+              free installation work. <br />
+              <br />
+              The whole process is designed to be simple, efficient and hassle
+              free. You may be confident that you are making the best decision
+              for your house and the environment as ECO4 will assist you through
+              every step of the process. Ready to enjoy your energy efficient
+              home? <br />
+              <br />
+              Let's get started!
+            </p>
+
+            <a class="dark--green fw-bold" href="#" id="find--out--more"
+              >FIND OUT MORE</a
+            >
+          </div>
+
+          <div class="col-md-6 col-sm-12 left-subsection">
+            <div class="row mb-5">
+              <div
+                class="col-md-6 col-sm-12 info--box check-box d-flex flex-column justify-content-center align-items-center text-light"
+              >
+                <div>
+                  <img src="img/check-mark.svg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="fw-bold">CHECK YOU ELIGIBILITY</h3>
+                <p class="text-center">
+                  The journey to a more energy-efficient and sustainable home
+                  beings with checking your eligibility for ECO4 funding.
+                </p>
+                <a class="read--more--link fw-bold" href="">READ MORE</a>
+              </div>
+              <div class="col-md-6 col-sm-12 info--box survey-box d-flex flex-column justify-content-center align-items-center text-light">
+                <img src="img/surveyor.svg" alt="" class="img-fluid" />
+
+                <h3 class="fw-bold">SURVEY BY OUR TEAM</h3>
+                <p class="text-center">
+                  Our commitment to your home energy efficiency starts with a
+                  FREE survey conducted by our expert team.
+                </p>
+                <a class="read--more--link fw-bold" href="">READ MORE</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-md-6 col-sm-12 info--box install-box d-flex flex-column justify-content-center align-items-center text-light"
+              >
+                <img src="img/business.svg" alt="" class="img-fluid" />
+
+                <h3 class="fw-bold">INSTALLATION WORKS</h3>
+                <p class="text-center">
+                  Once we've identified the energy efficiency measures suitable
+                  for your home, the nest step is arranging for the installation
+                  works
+                </p>
+                <a class="read--more--link fw-bold" href="">READ MORE</a>
+              </div>
+              <div
+                class="col-md-6 col-sm-12 info--box icon-box d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <img src="img/check-mark.svg" alt="" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="img/surveyor.svg" alt="" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="img/business.svg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </head>
 <body>
+      <header>
+
+    </header>
     <section class="forms">
         <div class="find">
             <h4>FIND OUT IF YOU ARE ELIGIBLE</h4>
@@ -26,7 +251,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">                       
-                        <div class="small">
+                        <div class="smalls">
                             <input type="password" class="form-control" id="inputPhonenumber" placeholder="Phone number">
                         </div>
                     </div>
@@ -36,7 +261,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">                       
-                        <div class="small">
+                        <div class="smalls">
                             <input type="password" class="form-control" id="inputPhonenumber" placeholder="Postal code">
                         </div>
                     </div>
@@ -54,11 +279,85 @@
             </div>
         </div>
     </section>
+
+<!-- ====Start Of Footer ====-->    
+<section class="footer">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+       <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col link-container">
+                    
+                    <ul>
+                        <li><h5>Quick Links</h5></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    </ul>
+                </ul>
+                </div>
+                <div class="col link-container">
+                   
+                    <ul>
+                        <li> <h5>Credentials</h5></li>
+                        <li>
+                            <a href="">Energy Performance Certificate</a>
+                            
+                        </li>
+                        <li>
+                            <a href="">Display Energy Certificate</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="col link-container">
+                    
+                    <ul>
+                        <li><h5>Quick Links</h5></li>
+                        <li>
+                            <a href="">Energy Perfomance Ceritificate</a>
+                        </li>
+                        <li>
+                            <a href="">Display Energy Ceritificate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="line-container">
+                <div class="line"></div>
+            </div>
+            <br>
+            <div class="bottom-container">        
+                  <p>© ECO4.ORG.UK 2023</p>
+            <p>EFFICIENT ENERGY HOMES LTD is a registered company in England and Wales, Registration Number: 13083883</p>
+
+            </div>
+           
+  
+        </div>
+<<<<<<< HEAD
+
+=======
+   
     <footer>
+>>>>>>> form
 
     </footer>
+=======
+>>>>>>> f758b5bb7d7a7917bb365c04d2582dbd3e149573
+</section>
+<!-- ====End Of Footer ====-->
+
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    
 </body>
 </html>
