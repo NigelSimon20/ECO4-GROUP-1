@@ -17,6 +17,11 @@
     src: url(./Inter-Light.ttf);
 }
 
+@font-face {
+    font-family: Mon-thin;
+    src: url(./Montserrat-Thin.ttf);
+}
+
 
 @font-face {
     font-family: Montserrat-bold;
