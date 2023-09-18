@@ -12,13 +12,18 @@
     font-family: Regular;
     src: url(Inter-Regular.ttf);
 }
+@font-face {
+    font-family: inter;
+    src: url(./Inter-Light.ttf);
+}
+
 
 @font-face {
-    font-family: Monserat-regular;
-    src: url(Montserrat-Regular.ttf);
+    font-family: Montserrat-bold;
+    src: url(Montserrat-Bold.ttf);
 }
 
 @font-face {
-    font-family: Monserat-bold;
-    src: url(Montserrat-Bold.ttf);
+    font-family: Montserrat-regular;
+    src: url(Montserrat-Light.ttf);
 }
