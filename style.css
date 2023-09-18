@@ -120,6 +120,7 @@ q {
   quotes: none;
 }
 
+<<<<<<< HEAD
 blockquote:before,
 blockquote:after,
 q:before,
@@ -345,6 +346,10 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
+=======
+blockquote:before, blockquote:after,
+q:before, q:after {
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   content: "";
   content: none;
 }
@@ -411,6 +416,75 @@ table {
   width: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#about {
+  font-family: "Montserrat-regular";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 80px;
+}
+#about img {
+  width: 100%;
+}
+#about .image2 {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+}
+#about .about-info h2 {
+  color: #17380B;
+  font-family: "Montserrat-bold";
+  padding-bottom: 30px;
+}
+#about .about-info .about-content-text {
+  line-height: 27px;
+}
+#about .about-info button {
+  width: 260px;
+  height: 70px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3EBD6B;
+  color: white;
+  font-family: "Montserrat-bold";
+}
+
+.footer {
+  background-image: url(./img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer .link-container ul li h5 {
+  color: white;
+  font-family: "Regular";
+}
+.footer .link-container ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "inter";
+}
+.footer .line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .line {
+  background-color: white;
+  height: 2px;
+  width: 90vw;
+  align-self: center;
+}
+.footer .bottom-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .bottom-container p {
+  width: 100%;
+  text-align: center;
 }
 
 .forms {
@@ -510,7 +584,11 @@ table {
   display: flex;
 }
 #about .about-info h2 {
+<<<<<<< HEAD
   color: #17380b;
+=======
+  color: #17380B;
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   font-family: "Montserrat-bold";
 }
 #about .about-info .btn button {
@@ -518,7 +596,11 @@ table {
   height: 70px;
   border: none;
   border-radius: 8px;
+<<<<<<< HEAD
   background-color: #3ebd6b;
+=======
+  background-color: #3EBD6B;
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   color: white;
   font-family: "Montserrat-bold";
 }
@@ -539,7 +621,11 @@ table {
   display: flex;
 }
 #about .about-info h2 {
+<<<<<<< HEAD
   color: #17380b;
+=======
+  color: #17380B;
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   font-family: "Montserrat-bold";
   padding-bottom: 30px;
 }
@@ -551,7 +637,11 @@ table {
   height: 70px;
   border: none;
   border-radius: 8px;
+<<<<<<< HEAD
   background-color: #3ebd6b;
+=======
+  background-color: #3EBD6B;
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   color: white;
   font-family: "Montserrat-bold";
 }
@@ -595,17 +685,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .forms .find .form {
     padding: 0.01px;
   }
-  .forms .find .form .small {
+  .forms .find .form .smalls {
     height: 65px;
     margin-left: 0px;
     width: 96%;
   }
-  .forms .find .form .small input {
-    margin-left: 0px;
+  .forms .find .form .smalls .form-control {
+    margin-left: 0px !important;
   }
   .forms .find .form .tabs {
     width: 50%;
   }
+<<<<<<< HEAD
   .forms .find .form input {
     width: 73.5%;
     height: 55px;
@@ -615,6 +706,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 15px;
     margin-top: 0px;
   }
+=======
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   .forms .find .form .buttons {
     margin-top: -43px;
     margin-left: 350px;
@@ -674,17 +767,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .forms .find .form {
     padding: 0.01px;
   }
-  .forms .find .form .small {
-    height: 60px;
-    margin-left: 0px;
-    width: 96%;
-  }
-  .forms .find .form .small input {
-    margin-top: 0px;
-  }
   .forms .find .form .tabs {
     width: 50%;
   }
+<<<<<<< HEAD
   .forms .find .form input {
     width: 70%;
     height: 55px;
@@ -693,6 +779,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     outline: 0;
     font-size: 12px;
     margin-top: 0px;
+=======
+  .forms .find .form .smalls {
+    height: 65px;
+    margin-left: 0px;
+    width: 96%;
+  }
+  .forms .find .form .smalls input {
+    margin-left: 0px !important;
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
   }
   .forms .find .form .buttons {
     margin-top: -43px;
@@ -741,6 +836,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 Custom media queries
 */
 /* Set width to make card deck cards 100% width */
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -945,6 +1041,8 @@ table {
   text-align: center;
 }
 
+=======
+>>>>>>> 8489ba3d9cabab2fd9bdbaf8bdd61c89a75718d1
 /*
 ####################################################
 M E D I A  Q U E R I E S

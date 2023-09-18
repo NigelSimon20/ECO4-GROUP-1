@@ -128,241 +128,6 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  --light-green: #e1fee1;
-  --dark-green: #146314;
-}
-
-#steps {
-  background-color: var(--light-green);
-}
-
-.dark--green {
-  color: var(--dark-green);
-}
-
-#steps--info--text {
-  color: var(--dark-green);
-  font-family: Montserrat-regular;
-}
-
-.heading {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.check-box {
-  background-color: rgb(0, 222, 112);
-  border-radius: 4%;
-}
-
-.survey-box {
-  background-color: rgb(0, 222, 112);
-  border-radius: 4%;
-}
-
-.install-box,
-.icon-box {
-  background-color: rgb(0, 221, 112);
-  border-radius: 4%;
-}
-
-.read--more--link {
-  text-decoration: none;
-  color: white;
-  padding-bottom: 1rem;
-  visibility: visible;
-}
-.left-subsection {
-  h3 {
-    font-size: 0.5rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-}
-
-.extra-light-text {
-  font-family: Montserrat-thin;
-}
-
-.border--blue {
-  border: 5px solid blue;
-}
-.border--red {
-  border: 5px solid red;
-}
-
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-
-/* 
-Extra small devices (portrait phones, less than 576px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
-
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) {
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 $bold: "bold";
 $regular: "Regular";
 $extra: "Extra-bold";
@@ -422,8 +187,82 @@ $extra: "Extra-bold";
         }
       }
     }
-  }
 }
+
+#about{
+    font-family: 'Montserrat-regular';
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 80px;
+
+    img{
+        width: 100%;
+    }
+
+    
+    .image2{
+        margin-top: 15px;
+        gap: 15px;
+        display: flex;
+    }
+
+    .about-info{
+        h2{
+            color: #17380B;
+            font-family: 'Montserrat-bold';
+            padding-bottom: 30px;
+            
+        }
+
+        .about-content-text{
+            line-height: 27px;
+        }
+
+        
+            button{
+            width: 260px;
+            height: 70px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3EBD6B;
+            color: #ffff;
+            font-family: 'Montserrat-bold';
+            }
+        
+    }
+}
+.footer{
+	background-image: url(./img/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.link-container{
+		
+		
+		ul{
+			li{
+				h5{color: white; font-family : "Regular";}
+				a{color: white; text-decoration: none; font-family : "inter"; }
+			}
+		}
+		
+
+
+	}
+	.line-container{display: flex; align-items: center; justify-content: center;}
+	.line{
+			background-color: white; height: 2px; width: 90vw; align-self: center;
+		}
+		.bottom-container{
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{width: 100%; text-align: center;}
+
+		}
+}
+
 
 .forms {
   background-color: rgb(199, 253, 200);
@@ -577,17 +416,21 @@ $extra: "Extra-bold";
       line-height: 27px;
     }
 
-    button {
-      width: 260px;
-      height: 70px;
-      border: none;
-      border-radius: 8px;
-      background-color: #3ebd6b;
-      color: #ffff;
-      font-family: "Montserrat-bold";
+        
+            button{
+            width: 260px;
+            height: 70px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3EBD6B;
+            color: #ffff;
+            font-family: 'Montserrat-bold';
+            }
+        
     }
-  }
 }
+
+
 
 /*
 ####################################################
@@ -610,161 +453,63 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  .forms {
-    background-color: rgb(199, 253, 200);
-    text-align: center;
-    height: 650px;
-    position: relative;
-    margin-top: 10px;
-    .find {
-      background-color: white;
-      text-align: center;
-      width: 80%;
-      margin-left: 10%;
-      position: absolute;
-      margin-top: 80px;
-      h4 {
-        color: rgb(4, 59, 4);
-        margin-top: 40px;
-        font-family: $bold;
-      }
-      .form {
-        padding: 0.01px;
-        .small {
-          height: 65px;
-          margin-left: 0px;
-          width: 96%;
-          input {
-            margin-left: 0px;
-          }
-        }
-        .tabs {
-          width: 50%;
-        }
-        input {
-          width: 73.5%;
-          height: 55px;
-          margin-left: 80px;
-          border-color: rgb(199, 253, 200);
-          outline: 0;
-          font-size: 15px;
-          margin-top: 0px;
-        }
-        .buttons {
-          margin-top: -43px;
-          margin-left: 350px;
-          button {
-            background-color: rgb(0, 197, 102);
-            border: 0px;
-            width: 30px;
-            font-size: 12px;
-            margin: 3px;
-            align-items: center;
-            padding-left: 7px;
-            font-size: 10px;
-          }
-        }
-        .button {
-          margin-top: 50px;
-          button {
-            background-color: rgb(0, 197, 102);
-            border: 0px;
-            width: 150px;
-            height: 40px;
-            font-family: $bold;
-            font-size: 17px;
-            margin-bottom: 50px;
-          }
-        }
-      }
-    }
-  }
-  .footer {
-    .line {
-      width: 98vw;
-    }
-    ul {
-      width: 100%;
-      line-height: 2em;
-    }
-  }
+@media (min-width: 768px) {  
+	.forms{
+		background-color: rgb(199, 253, 200); text-align: center; height: 650px; position: relative; margin-top: 10px;
+		.find{
+			background-color: white; text-align: center; width: 80%; margin-left: 10%; position: absolute; margin-top: 80px;
+			h4{color: rgb(4, 59, 4);margin-top: 40px;font-family: $bold;}
+			// input{width: 73.5%;height: 55px;margin-left: 80px;border-color: rgb(199, 253, 200);outline: 0;font-size: 15px;margin-top: 0px;
+					
+			// }
+			.form{padding: 0.01px;
+				.smalls{height: 65px;margin-left: 0px;width: 96%;
+					.form-control{margin-left: 0px !important;}
+				}
+				.tabs{width: 50%;}
+
+				.buttons{margin-top: -43px; margin-left: 350px;
+					button{background-color: rgb(0, 197, 102);border: 0px;width: 30px;font-size: 12px;margin: 3px; align-items: center;padding-left: 7px;font-size: 10px;}
+				}
+				.button{margin-top: 50px;
+					button{background-color: rgb(0, 197, 102);border: 0px;width: 150px;height: 40px;font-family: $bold;font-size: 17px;margin-bottom: 50px;}
+				}
+			}
+		}
+	}
+	.footer{.line{width: 98vw;}  ul{ width: 100%; line-height: 2em;}}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .forms {
-    background-color: rgb(199, 253, 200);
-    text-align: center;
-    height: 650px;
-    position: relative;
-    margin-top: 10px;
-    .find {
-      background-color: white;
-      text-align: center;
-      width: 40%;
-      margin-left: 30%;
-      position: absolute;
-      margin-top: 80px;
-      h4 {
-        color: rgb(4, 59, 4);
-        margin-top: 40px;
-        font-family: $bold;
-      }
-      .form {
-        padding: 0.01px;
-        .small {
-          height: 60px;
-          margin-left: 0px;
-          width: 96%;
-          input {
-            margin-top: 0px;
-          }
-        }
-        .tabs {
-          width: 50%;
-        }
-        input {
-          width: 70%;
-          height: 55px;
-          margin-left: 80px;
-          border-color: rgb(199, 253, 200);
-          outline: 0;
-          font-size: 12px;
-          margin-top: 0px;
-        }
-        .buttons {
-          margin-top: -43px;
-          margin-left: 280px;
-          button {
-            background-color: rgb(0, 197, 102);
-            border: 0px;
-            width: 30px;
-            font-size: 12px;
-            margin: 3px;
-            align-items: center;
-            padding-left: 7px;
-            font-size: 10px;
-          }
-        }
-        .button {
-          margin-top: 50px;
-          button {
-            background-color: rgb(0, 197, 102);
-            border: 0px;
-            width: 150px;
-            height: 40px;
-            font-family: $bold;
-            font-size: 17px;
-            margin-bottom: 50px;
-          }
-        }
-      }
-    }
-  }
-  #about {
-    flex-wrap: nowrap;
-    gap: 30px;
+@media (min-width: 992px) { 
+	.forms{
+		background-color: rgb(199, 253, 200); text-align: center; height: 650px; position: relative; margin-top: 10px;
+		.find{
+			background-color: white; text-align: center; width: 40%; margin-left: 30%; position: absolute; margin-top: 80px;
+			h4{color: rgb(4, 59, 4);margin-top: 40px;font-family: $bold;}
+			.form{padding: 0.01px;
+				// .smalls{height: 60px;left: 0px;width: 96%; display:  
+				// 	input{margin-top: 0px; margin-left: -10%;}
+				// }
+				.tabs{width: 50%;}
+				// input{width: 50%;height: 55px;margin-left: 0px;border-color: rgb(199, 253, 200);outline: 0;font-size: 12px;margin-top: 0px;
+					
+				// }
+				.smalls{height: 65px;margin-left: 0px;width: 96%;
+					input{margin-left: 0px !important;}
+				}
+				.buttons{margin-top: -43px; margin-left: 280px;
+					button{background-color: rgb(0, 197, 102);border: 0px;width: 30px;font-size: 12px;margin: 3px; align-items: center;padding-left: 7px;font-size: 10px;}
+				}
+				.button{margin-top: 50px;
+					button{background-color: rgb(0, 197, 102);border: 0px;width: 150px;height: 40px;font-family: $bold;font-size: 17px;margin-bottom: 50px;}
+				}
+			}
+		}
+	}
+	#about{
+        flex-wrap: nowrap;
+        gap: 30px;
 
     .about-info {
       h2 {
@@ -775,12 +520,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-top: -5px;
       }
 
-      button {
-        font-size: 20px;
-        margin-top: -12px;
-      }
+            button{
+                font-size: 20px;
+                margin-top: -12px
+            }
+        }
     }
-  }
+	
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -796,216 +542,9 @@ Custom media queries
 @media (max-width: 950px) {
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/// phone
-#about {
-  font-family: "Montserrat-regular";
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  margin-top: 80px;
 
-  img {
-    width: 100%;
-  }
 
-  .image2 {
-    margin-top: 15px;
-    gap: 15px;
-    display: flex;
-  }
-
-  .about-info {
-    h2 {
-      color: #17380b;
-      font-family: "Montserrat-bold";
-      padding-bottom: 30px;
-    }
-
-    .about-content-text {
-      line-height: 27px;
-    }
-
-    button {
-      width: 260px;
-      height: 70px;
-      border: none;
-      border-radius: 8px;
-      background-color: #3ebd6b;
-      color: #ffff;
-      font-family: "Montserrat-bold";
-    }
-  }
-}
-.footer {
-  background-image: url(./img/footer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  .link-container {
-    ul {
-      li {
-        h5 {
-          color: white;
-          font-family: "Regular";
-        }
-        a {
-          color: white;
-          text-decoration: none;
-          font-family: "inter";
-        }
-      }
-    }
-  }
-  .line-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .line {
-    background-color: white;
-    height: 2px;
-    width: 90vw;
-    align-self: center;
-  }
-  .bottom-container {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
 
 /*
 ####################################################
@@ -1055,12 +594,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-top: -5px;
       }
 
-      button {
-        font-size: 20px;
-        margin-top: -12px;
-      }
+            button{
+                font-size: 20px;
+                margin-top: -12px
+            }
+        }
     }
-  }
+	
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
